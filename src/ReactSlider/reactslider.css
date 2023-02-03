@@ -1,0 +1,74 @@
+.slider{
+    border:solid 1px gray;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.slider-item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #263c97;
+    transition: opacity 1s ease-in-out;
+}
+.slider-item.active{
+    opacity: 1;
+}
+
+.slider-controls{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.slider-indicator-item{
+    font-size:20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.slider-indicator-item.active{
+    background-color: red;
+}
+ 
+.itemSlider .topHead {
+    background-color: #fcbe00;
+    border-radius: 2px 2px;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 13px;
+    margin-bottom: 5px;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    vertical-align: top;
+    border:0;
+}
+.itemSlider h3{
+    color: #fff;
+}
+.itemSlider .discoverBtn {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px 3px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 0;
+    padding: 14px 52px;
+    text-transform: uppercase;
+}
